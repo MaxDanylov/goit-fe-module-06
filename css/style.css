@@ -1,0 +1,53 @@
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+button {
+  outline: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+/* DELETE */
+* {
+  outline: 1px solid aqua;
+}
+/* HEADER */
+.navigation {
+  min-height: 96px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  align-items: center;
+  font-family: "Montserrat", "Arial", sans-serif;
+  line-height: 1.2;
+}
+.navigation a {
+  color: #95e1d3;
+}
+.nagigation-list {
+  display: flex;
+}
+.navigation-logo a {
+  font-size: 30px;
+  font-weight: 700;
+}
+.navigation-list-item:not(:last-of-type) {
+  margin-right: 54px;
+}
+.nagigation-list a {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
