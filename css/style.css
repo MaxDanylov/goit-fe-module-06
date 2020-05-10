@@ -78,7 +78,7 @@ header {
   color: #f38181;
 }
 .navigation-list-item a:hover .navigation-list-item::after {
-  opasity: 1;
+  opacity: 1;
 }
 /* MAIN */
 .section-head-tagline {
