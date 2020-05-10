@@ -21,9 +21,9 @@ h3 {
   padding: 0;
 }
 /* DELETE */
-/* * {
+* {
   outline: 1px solid rgb(0, 60, 255);
-} */
+}
 /* HEADER */
 header {
   display: flex;
@@ -34,7 +34,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  /* align-items: center; */
   font-family: "Montserrat", "Arial", sans-serif;
   line-height: 1.2;
 }
@@ -98,8 +97,65 @@ header {
   text-align: center;
   color: #333333;
 }
-
+.section-head::after {
+  content: "";
+  display: block;
+  margin: 38px auto 56px;
+  background-color: #f38181;
+  width: 60px;
+  height: 3px;
+}
 /* FEATURES */
 .futures {
   padding-top: 84px;
+}
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.item-head {
+  margin-bottom: 10px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #333333;
+}
+.description-list-item,
+.team-description {
+  margin: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #999999;
+}
+.features-list-item {
+  box-sizing: border-box;
+  width: 390px;
+  margin: 0 0 86px;
+  padding: 5px;
+  padding-left: 90px;
+  background-repeat: no-repeat;
+  background-position: 30px 10px;
+}
+.photography {
+  background-image: url(../feature-icon/alarm.png);
+}
+.web-design {
+  background-image: url(../feature-icon/line-graph.png);
+}
+.creativity {
+  background-image: url(../feature-icon/computer-ok.png);
+}
+.seo {
+  background-image: url(../feature-icon/book.png);
+}
+.css-html {
+  background-image: url(../feature-icon/home.png);
+}
+.digital {
+  background-image: url(../feature-icon/image.png);
 }
