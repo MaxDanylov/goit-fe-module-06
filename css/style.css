@@ -21,9 +21,9 @@ h3 {
   padding: 0;
 }
 /* DELETE */
-/* * {
+* {
   outline: 1px solid rgb(0, 60, 255);
-} */
+}
 /* HEADER */
 header {
   display: flex;
@@ -42,6 +42,7 @@ header {
 }
 .nagigation-list {
   display: flex;
+  flex-wrap: wrap;
 }
 .navigation-logo a {
   font-size: 30px;
@@ -117,7 +118,7 @@ header {
   justify-content: space-around;
 }
 .item-head {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 14px;
   line-height: 1.2;
@@ -126,14 +127,19 @@ header {
   color: #333333;
 }
 .description-list-item,
-.team-description {
+.team-description,
+.team-list-item-description {
   margin: 0;
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 15px;
-  font-weight: 400;
   line-height: 24px;
   color: #999999;
 }
+.description-list-item,
+.team-description {
+  font-weight: 400;
+}
+
 .features-list-item {
   box-sizing: border-box;
   width: 390px;
@@ -171,11 +177,29 @@ header {
   padding: 0px 20px;
   text-align: center;
 }
+.team {
+  border-bottom: 1px solid #e5e5e5;
+}
 /* TEAM LIST */
 .team-list {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 80px;
 }
 .team-list-item {
   width: 380px;
+}
+.team-list-iteam-img {
+  margin-bottom: 30px;
+}
+.item-head {
+  text-align: center;
+}
+.team-list-item-description {
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+}
+.team-list-item:hover .team-list-iteam-img img {
+  transform: translate(-10px, -10px);
 }
