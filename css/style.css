@@ -5,14 +5,12 @@
 button,
 a {
   outline: none;
+  text-decoration: none;
 }
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-a {
-  text-decoration: none;
 }
 h1,
 h2,
@@ -21,9 +19,9 @@ h3 {
   padding: 0;
 }
 /* DELETE */
-* {
+/* * {
   outline: 1px solid rgb(0, 60, 255);
-}
+} */
 /* HEADER */
 header {
   display: flex;
@@ -187,9 +185,11 @@ header {
   padding-bottom: 80px;
 }
 .team-list-item {
+  position: relative;
   width: 380px;
 }
 .team-list-iteam-img {
+  position: relative;
   margin-bottom: 30px;
 }
 .item-head {
@@ -200,6 +200,73 @@ header {
   font-style: italic;
   text-align: center;
 }
+/* OVERLAY */
+.overlay {
+  display: flex;
+  position: absolute;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: translate(0px, 0px);
+  transition: transform 0.2s linear;
+  transition: opacity 0.2s linear;
+  height: 470px;
+  width: 380px;
+  box-shadow: 10px 10px #95e1d3;
+  background-image: linear-gradient(
+    180deg,
+    rgba(243, 129, 129, 0.9),
+    rgba(252, 227, 138, 0.9)
+  );
+}
+
+.overlay a {
+  display: block;
+  background-color: #fce38a;
+  opacity: 0;
+  transition: opacity 0.5s linear;
+  transition: background-color 0.2s linear;
+  width: 56px;
+  height: 56px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.overlay a:not(:last-of-type) {
+  border-right: 1px solid rgba(243, 129, 129, 0.5);
+}
+
+.facebook {
+  background-image: url(../social-icon/facebook.png);
+}
+.twitter {
+  background-image: url(../social-icon/twitter.png);
+}
+.pinterest {
+  background-image: url(../social-icon/pinterest.png);
+}
+.instagram {
+  background-image: url(../social-icon/instagram.png);
+}
+/* HOVER */
+.team-list-iteam-img img {
+  transform: translate(0px, 0px);
+  transition: transform 0.2s linear;
+}
 .team-list-item:hover .team-list-iteam-img img {
   transform: translate(-10px, -10px);
 }
+.team-list-item:hover .overlay {
+  transform: translate(-10px, -10px);
+  opacity: 1;
+}
+.team-list-item:hover .overlay a {
+  opacity: 1;
+}
+.overlay a:hover {
+  background-color: #95e1d3;
+}
+.overlay a:focus {
+  background-color: #95e1d3;
+}
+/* FOOTER */
