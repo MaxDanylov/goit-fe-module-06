@@ -37,7 +37,7 @@ header {
 }
 .navigation a {
   color: #95e1d3;
-  ransition: color 0.2s linear;
+  transition: color 0.2s linear;
 }
 .nagigation-list {
   display: flex;
@@ -209,9 +209,7 @@ header {
   justify-content: center;
   align-items: center;
   opacity: 0;
-  transform: translate(0px, 0px);
-  transition: transform 0.2s linear;
-  transition: opacity 0.2s linear;
+  transition: all 0.2s linear;
   height: 470px;
   width: 380px;
   box-shadow: 10px 10px #95e1d3;
