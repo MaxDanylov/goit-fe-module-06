@@ -277,8 +277,8 @@ footer {
 .footer-wrap {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
-  /* font-size: 0px; */
+  align-items: center;
+  font-size: 0px;
 }
 .footer-copyright {
   font-family: "Montserrat", "Arial", sans-serif;
@@ -292,16 +292,37 @@ footer {
 }
 /* FORM */
 .contact-form {
-  height: 40px;
-  width: 380px;
+  display: flex;
 }
 .contact-form__input {
+  padding: 0;
   height: 40px;
+  width: 230px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  border: 1px solid #e7e7e7;
 }
+.contact-form__input::placeholder {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 24px;
+  font-style: italic;
+  vertical-align: middle;
+}
+
+/* BUTTON */
 .contact-form__btn {
+  padding: 0;
   border: none;
   width: 150px;
   height: 40px;
   background-color: #95e1d3;
   cursor: pointer;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ffffff;
 }
