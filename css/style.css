@@ -18,11 +18,6 @@ h3 {
   margin: 0;
   padding: 0;
 }
-/* DELETE */
-/* * {
-  outline: 1px solid rgb(0, 60, 255);
-} */
-/* HEADER */
 header {
   display: flex;
   align-items: center;
@@ -79,7 +74,6 @@ header {
   opacity: 1;
   color: #f38181;
 }
-/* MAIN */
 .section-head-tagline {
   display: block;
   margin-bottom: 14px;
@@ -107,7 +101,6 @@ header {
 .futures .section-head::after {
   margin: 38px auto 56px;
 }
-/* FEATURES */
 .futures {
   padding-top: 84px;
 }
@@ -166,7 +159,6 @@ header {
 .digital {
   background-image: url(../feature-icon/image.png);
 }
-/* OUR TEAM */
 .team .section-head::after {
   margin: 32px auto 40px;
 }
@@ -179,7 +171,6 @@ header {
 .team {
   border-bottom: 1px solid #e5e5e5;
 }
-/* TEAM LIST */
 .team-list {
   display: flex;
   justify-content: space-between;
@@ -201,7 +192,6 @@ header {
   font-style: italic;
   text-align: center;
 }
-/* OVERLAY */
 .overlay {
   display: flex;
   position: absolute;
@@ -219,7 +209,6 @@ header {
     rgba(252, 227, 138, 0.9)
   );
 }
-
 .overlay a {
   display: block;
   background-color: #fce38a;
@@ -247,7 +236,6 @@ header {
 .instagram {
   background-image: url(../social-icon/instagram.png);
 }
-/* HOVER */
 .team-list-iteam-img img {
   transform: translate(0px, 0px);
   transition: transform 0.2s linear;
@@ -267,7 +255,6 @@ header {
 .overlay a:focus {
   background-color: #95e1d3;
 }
-/* FOOTER */
 footer {
   display: flex;
   align-items: center;
@@ -287,7 +274,6 @@ footer {
 .footer-copyright a {
   color: #f38181;
 }
-/* FORM */
 .contact-form {
   display: flex;
 }
@@ -313,7 +299,6 @@ footer {
 .contact-form__input:focus:invalid {
   border: 1px solid #ff0000;
 }
-/* BUTTON */
 .contact-form__btn {
   padding: 0;
   border: none;
