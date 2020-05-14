@@ -193,7 +193,7 @@ header {
   position: relative;
   margin-bottom: 30px;
 }
-.item-head {
+.team-list-item .item-head {
   text-align: center;
 }
 .team-list-item-description {
@@ -212,7 +212,7 @@ header {
   transition: all 0.2s linear;
   height: 470px;
   width: 380px;
-  box-shadow: 10px 10px #95e1d3;
+  box-shadow: 0px 0px #95e1d3;
   background-image: linear-gradient(
     180deg,
     rgba(243, 129, 129, 0.9),
@@ -256,6 +256,7 @@ header {
   transform: translate(-10px, -10px);
 }
 .team-list-item:hover .overlay {
+  box-shadow: 10px 10px #95e1d3;
   transform: translate(-10px, -10px);
   opacity: 1;
 }
@@ -275,8 +276,6 @@ footer {
 .footer-wrap {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  font-size: 0px;
 }
 .footer-copyright {
   font-family: "Montserrat", "Arial", sans-serif;
@@ -299,6 +298,7 @@ footer {
   padding-left: 10px;
   box-sizing: border-box;
   border: 1px solid #e7e7e7;
+  outline: none;
 }
 .contact-form__input::placeholder {
   font-family: "Roboto", "Arial", sans-serif;
@@ -306,9 +306,13 @@ footer {
   font-weight: 300;
   line-height: 24px;
   font-style: italic;
-  vertical-align: middle;
 }
-
+.contact-form__input:focus:valid {
+  border: 1px solid #00ff00;
+}
+.contact-form__input:focus:invalid {
+  border: 1px solid #ff0000;
+}
 /* BUTTON */
 .contact-form__btn {
   padding: 0;
@@ -323,4 +327,8 @@ footer {
   text-transform: uppercase;
   font-weight: 700;
   color: #ffffff;
+}
+.contact-form__btn:hover,
+.contact-form__btn:focus {
+  background-color: #f38181;
 }
